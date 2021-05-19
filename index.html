@@ -28,7 +28,7 @@ int rules1(int x,int y,int z)
 	if((x==1 && y==1 && z==1)||(x==1 && y==1 && z==0)|| (x==0 && y==1 && z==1)|| (x==0 && y==1 && z==0))
 		c=1;
 	else if((x==1 && y==0 && z==1)||(x==1 && y==0 && z==0)|| (x==0 && y==0 && z==1))
-		c=0;
+		c=0
 	else 
 		c=0;
 	return c;	
@@ -145,7 +145,7 @@ printf("the plain text \n");
 		else
 		{
 			int left   = q[i-1];
- 	 		int middle = q[i];
+ 	 		int middle = q[i]
  	 		int right  = q[i+1];
  	 		q1[i] = rules5(left, middle, right);
  		}
@@ -179,7 +179,7 @@ printf("the plain text \n");
 		}
 		else if (i==4)
 		{
-			int left   = s[i-1];
+			int left   = s[-1];
   			int middle = s[i];
  			int right  = 0;
  			s1[i] = rules5(left, middle, right);
@@ -228,7 +228,7 @@ for(j=0,i=1;i<=4;i++)
 			for(j=8,i=1;i<=4;i++)
 		 	{
 		 		z1[j]=s[i];
-		 		j++;
+		 		j++
 			 }
 			 
 			for(j=12,i=1;i<=4;i++)
@@ -267,7 +267,7 @@ for(j=0,i=1;i<=4;i++)
 			d[2]=key[16];
 			d[3]=key[17];
 			d[4]=key[18];
-			d[5]=key[19];	
+			d[5]=key[19]	
 			// applying rule no 60
 		 	
 		 		for ( i = 1; i <=5; i++) {
@@ -437,7 +437,7 @@ for(j=0,i=1;i<=4;i++)
 		{
 			int left   = cell[i-1];
  	 		int middle = cell[i];
- 	 		int right  = cell[i+1];
+ 	 		int right  = cell[+1];
  	 		nextgen[i] = rules(left, middle, right);
  		}
 	}
@@ -545,7 +545,7 @@ int rules2(int x,int y,int z)
 	int c;
 	if((x==1 && y==1 && z==1)||(x==1 && y==1 && z==0)|| (x==1 && y==0 && z==1)|| (x==1 && y==0 && z==0))
 		c=1;
-	else if((x==0 && y==1 && z==1)||(x==0 && y==1 && z==0)|| (x==0 && y==0 && z==1))
+	else if((x==0 && y==1 && z==1)||(x==0 && y=1 && z==0)|| (x==0 && y==0 && z==1))
 		c=0;
 	else 
 		c=0;
@@ -607,7 +607,7 @@ int main()
 	n= sizeof(cell)/4;
 	printf("%d  The encrypted text  ",n);
 	for(i=0;i < n ;i++)
-	printf("%d",cell[i]);
+	printf("%d",cell);
 	
 	for(po=1;po < = 15;po++)
 			{
@@ -694,7 +694,7 @@ int main()
 				else if (i==5)
 				{
 					int left   = c[i-1];
-		  			int middle = c[i];
+		  			int middle = c[];
 		 			int right  = c[1];
 		 		c1[i] = rules3(left, middle, right);
 				}
@@ -813,10 +813,10 @@ int main()
  	
  
  	
- 		for ( i = 0; i < n; i++) {
+ 		for ( i = 0; i < =n; i++) {
 		if (i==0)
 		{
-			int left   = nextgen[n-1];
+			int left   = nextgen[-1];
   			int middle = nextgen[i];
  			int right  = nextgen[i+1];
 			cell[i] = rules1(left, middle, right); 
